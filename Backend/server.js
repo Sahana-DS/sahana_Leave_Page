@@ -2,7 +2,7 @@ const express = require('express');
 const { Pool } = require('pg');
 const cors = require('cors');
 const app = express();
-const port = process.env.PORT || 3413;
+const port = process.env.PORT || 3424;
 const host = process.env.HOST || '0.0.0.0';
 
 // Enhanced configuration
@@ -318,8 +318,8 @@ async function startServer() {
     await checkDatabaseConnection();
     await initializeDatabase();
     app.listen(port, host, () => {
-      console.log(`Server running at http://54.227.149.186${host}:${port}`);
-    });
+  console.log(`Server running on http://${host}:${port}`);
+});
   } catch (error) {
     console.error('Failed to start server:', error);
     process.exit(1);
