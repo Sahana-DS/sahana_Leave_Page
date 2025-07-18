@@ -3,7 +3,7 @@ const { Pool } = require('pg');
 const cors = require('cors');
 const app = express();
 const port = process.env.PORT || 3424;
-const host = process.env.HOST || '0.0.0.0';
+const host = process.env.HOST || '54.227.149.186';
 
 // Enhanced configuration
 require('dotenv').config();
