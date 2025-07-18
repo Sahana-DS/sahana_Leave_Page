@@ -318,7 +318,7 @@ async function startServer() {
     await checkDatabaseConnection();
     await initializeDatabase();
     app.listen(port, host, () => {
-      console.log(`Server running at http://${host}:${port}`);
+      console.log(`Server running at http://54.227.149.186${host}:${port}`);
     });
   } catch (error) {
     console.error('Failed to start server:', error);
